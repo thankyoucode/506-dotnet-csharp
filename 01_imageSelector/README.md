@@ -12,10 +12,7 @@ This project serves as a beginner-friendly introduction to ASP.NET Core and C# f
   - **Server-side**: Updates the image on form submission without JavaScript.
   - **Client-side**: Dynamically updates the image using JavaScript for immediate feedback.
 
-<video width="640" height="360" controls>
-  <source src="./readme_media/project.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Project gif](readme_media/project.gif)
 
 ## Getting Started
 
