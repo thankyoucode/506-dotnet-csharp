@@ -25,7 +25,7 @@ This project serves as a beginner-friendly introduction to ASP.NET Core and C# f
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/thankyoucode/506-dotnet-csharp.git
    cd your-repository
    ```
 
