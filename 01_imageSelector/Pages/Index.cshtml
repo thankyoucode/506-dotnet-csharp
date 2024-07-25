@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+     @* with server side C# consept *@
+    <h2>Server-side response | Not recommended for this type of simplicity</h2>
+    <p>Use C# server-side script. This is only for practicing C# logic; it's not recommended for actual use in this simple task. For tasks like this, JavaScript on the client-side is typically the best approach.</p>
+
+    <div>
+        <label for="imageSelector">Select an Image:</label>
+        <form method="post">
+            <select id="imageSelector" asp-for="SelectedImage" asp-items="Model.ImageOptions"  onchange="this.form.submit()">
+                <option>Please select an image</option>
+            </select>
+        </form>
+    </div>
+
+    <div>
+        <img class="image-list-item" id="selectedImage" src="@Model.SelectedImage" alt="Selected Image" />
+    </div>
+    <hr>
+    @* client side JS consept, Best fot this type of task *@    
+    <h2>Best practice | Direct response in user Computer</h2>
+    <p>Use JavaScript client-side script. This is the best practice to perform this type of task that changes the image by selecting an option.</p>
+    
+    <div>
+        <label for="imageSelectorWithJs">Select an Image:</label>
+        <select id="imageSelectorWithJs" onchange="updateImage()">
+            <option value="python.webp" selected>Python</option>
+            <option value="C.png">C</option>
+            <option value="react.png">React</option>
+            <option value="angular.png">Angular</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+
+    <style>
+        .image-list-item {
+            height: 200px;
+            max-height: 50%;
+        }
+    </style>
+    
+    <div>
+        <img class="image-list-item" id="selectedImageWithJs" src="images/python.webp" alt="Selected Image" />
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function updateImage() {
+            var selectedImage = document.getElementById("imageSelectorWithJs").value;
+            document.getElementById("selectedImageWithJs").src = `images/${selectedImage}`;
+            console.log(document.getElementById("selectedImageWithJs").src);
+        }
+    </script>
+}

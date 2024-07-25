@@ -1,0 +1,47 @@
+SP.NET Core
+bin/
+obj/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# Visual Studio files
+*.vsconfig
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+# ASP.NET Core
+bin/
+obj/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# Visual Studio files
+*.vsconfig
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+# ASP.NET Core
+bin/
+obj/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# Visual Studio files
+*.vsconfig
+
+
+# Windows
+Thumbs.db
+
